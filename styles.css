@@ -578,26 +578,27 @@ p {
 .footer {
   background: var(--brand-olive);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: var(--spacing-xl) 0 var(--spacing-md);
+  padding: var(--spacing-sm) 0 var(--spacing-sm);
 }
 
 .footer-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
 }
 
 .footer-section h3 {
   font-size: 1.25rem;
-  margin-bottom: var(--spacing-md);
-  color: var(--brand-olive);
+  margin-bottom: var(--spacing-xs);
+  color: var(--brand-brown-dark);
 }
 
 .footer-section p,
 .footer-section a {
   color: var(--text-muted);
   margin-bottom: var(--spacing-xs);
+  color: var(--brand-brown-dark);
   transition: color var(--transition-fast);
 }
 
