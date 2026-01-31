@@ -176,12 +176,12 @@ p {
 }
 
 .btn-primary {
-  background: var(--brand-brown);
+  background: var(--brand-olive);
   color: white;
   box-shadow: var(--shadow-md);
   position: relative;
   overflow: hidden;
-  border: 2px solid var(--brand-brown);
+  border: 2px solid var(--brand-olive);
 }
 
 .btn-primary::before {
@@ -226,15 +226,14 @@ p {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(17, 20, 28, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--brand-cream);
+  backdrop-filter: blur(10px);
   transition: all var(--transition-base);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .navbar.scrolled {
-  background: rgba(17, 20, 28, 0.95);
+  background: var(--brand-cream);
   box-shadow: var(--shadow-md);
 }
 
@@ -242,23 +241,23 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: var(--spacing-sm);
-  padding-bottom: var(--spacing-sm);
+  padding: 1rem var(--spacing-md);
 }
 
 .navbar-logo {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-sm);
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--text-primary);
-  transition: transform var(--transition-base);
+  color: var(--brand-brown-dark);
+  text-decoration: none;
+  transition: color var(--transition-fast);
 }
 
 .navbar-logo:hover {
-  transform: scale(1.05);
+  color: var(--brand-olive);
 }
 
 .logo-icon {
@@ -288,8 +287,8 @@ p {
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding-top: 80px;
-  background: var(--gradient-dark);
+  padding-top: 100px;
+  background: var(--dark-bg);
 }
 
 .hero::before {
@@ -451,8 +450,8 @@ p {
 }
 
 .feature-icon {
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
   background: var(--brand-brown);
   border-radius: var(--radius-md);
   display: flex;
@@ -617,6 +616,10 @@ p {
     text-align: center;
   }
 
+  .hero {
+    padding-top: 120px;
+  }
+
   .hero-content {
     max-width: 100%;
   }
@@ -759,70 +762,46 @@ section {
 
 .text-rotate {
   display: inline-block;
-  animation: textRotate 9s infinite;
   position: relative;
 }
 
-@keyframes textRotate {
-
-  0%,
-  30% {
-    content: "Pipe Fence";
-    opacity: 1;
-  }
-
-  33%,
-  36% {
-    opacity: 0;
-  }
-
-  37%,
-  63% {
-    content: "Gate";
-    opacity: 1;
-  }
-
-  66%,
-  69% {
-    opacity: 0;
-  }
-
-  70%,
-  96% {
-    content: "Custom Welding";
-    opacity: 1;
-  }
-
-  99%,
-  100% {
-    opacity: 0;
-  }
-}
-
 .text-rotate::before {
-  content: "Pipe Fences";
-  animation: rotateWords 9s infinite;
+  content: "Pipe Fence";
+  animation: rotateWords 9s ease-in-out infinite;
 }
 
 @keyframes rotateWords {
 
   0%,
-  30% {
+  27% {
     content: "Pipe Fence";
+    opacity: 1;
   }
 
-  33%,
-  63% {
+  30%,
+  33% {
+    opacity: 0;
+  }
+
+  36%,
+  60% {
     content: "Gate";
+    opacity: 1;
   }
 
-  66%,
-  96% {
+  63%,
+  66% {
+    opacity: 0;
+  }
+
+  69%,
+  93% {
     content: "Custom Welding";
+    opacity: 1;
   }
 
-  99%,
+  96%,
   100% {
-    content: "Pipe Fence";
+    opacity: 0;
   }
 }
