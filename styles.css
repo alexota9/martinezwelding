@@ -625,6 +625,7 @@ p {
 
   .hero {
     padding-top: 100px;
+    padding-bottom: 3rem;
     min-height: auto;
   }
 
@@ -668,7 +669,7 @@ p {
   }
 
   .navbar .container {
-    padding: 0.25rem var(--spacing-sm);
+    padding: 0.25rem 1.5rem;
   }
 
   .btn {
