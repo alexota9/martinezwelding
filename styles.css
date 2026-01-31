@@ -677,6 +677,13 @@ p {
     justify-content: center;
   }
 
+  .navbar .btn {
+    width: auto;
+    min-width: 35%;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
   .cta-showcase-video {
     height: 250px;
   }
