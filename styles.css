@@ -178,12 +178,12 @@ p {
 }
 
 .btn-primary {
-  background: var(--brand-olive);
+  background: var(--brand-brown);
   color: white;
   box-shadow: var(--shadow-md);
   position: relative;
   overflow: hidden;
-  border: 2px solid var(--brand-olive);
+  border: 2px solid var(--brand-brown);
 }
 
 .btn-primary::before {
@@ -274,7 +274,7 @@ p {
 }
 
 .logo-image {
-  height: 100%;
+  height: 10rem;
   width: auto;
   object-fit: cover;
 }
@@ -596,14 +596,17 @@ p {
 
 .footer-section p,
 .footer-section a {
-  color: var(--text-muted);
   margin-bottom: var(--spacing-xs);
   color: var(--brand-cream);
   transition: color var(--transition-fast);
 }
 
+.footer-section a:visited {
+  color: var(--brand-cream);
+}
+
 .footer-section a:hover {
-  color: var(--brand-olive);
+  color: var(--brand-brown-dark);
 }
 
 .footer-links {
@@ -710,6 +713,7 @@ p {
 
   .logo-image {
     height: 6rem;
+    object-fit: cover;
   }
 
   .logo-icon {
