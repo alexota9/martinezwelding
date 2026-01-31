@@ -27,7 +27,7 @@
 
   /* Text Colors */
   --text-primary: var(--brand-cream);
-  --text-secondary: #d4d2c0;
+  --text-secondary: #a8a696;
   --text-muted: #a8a696;
 
   /* Gradients - Removed for solid colors */
@@ -677,6 +677,10 @@ p {
 
   .navbar-logo {
     font-size: 1.25rem;
+  }
+
+  .logo-image {
+    height: 60px;
   }
 
   .logo-icon {
