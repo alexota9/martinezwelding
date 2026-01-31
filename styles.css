@@ -27,8 +27,8 @@
 
   /* Text Colors */
   --text-primary: var(--brand-cream);
-  --text-secondary: #a8a696;
-  --text-muted: #a8a696;
+  --text-secondary: #ecead6;
+  --text-muted: #ecead6;
 
   /* Gradients - Removed for solid colors */
   --gradient-dark: linear-gradient(180deg, var(--dark-bg) 0%, var(--dark-bg-secondary) 100%);
@@ -275,6 +275,10 @@ p {
   height: 180px;
   width: auto;
   object-fit: contain;
+}
+
+.hero-mobile-logo {
+  display: none;
 }
 
 /* ========================================
@@ -635,6 +639,14 @@ p {
   .hero-visual {
     order: -1;
     margin-bottom: var(--spacing-lg);
+  }
+
+  .hero-mobile-logo {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto var(--spacing-md);
+    object-fit: contain;
   }
 
   .hero-image,
