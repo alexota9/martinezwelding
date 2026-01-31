@@ -620,7 +620,8 @@ p {
   }
 
   .hero {
-    padding-top: 120px;
+    padding-top: 140px;
+    min-height: auto;
   }
 
   .hero-content {
