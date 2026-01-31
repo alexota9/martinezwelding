@@ -522,12 +522,12 @@ p {
 }
 
 .cta-text h2 {
-  color: white;
+  color: var(--brand-cream);
   margin-bottom: var(--spacing-md);
 }
 
 .cta-text p {
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--brand-cream);
   font-size: 1.25rem;
   margin-bottom: var(--spacing-lg);
 }
