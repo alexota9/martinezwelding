@@ -292,7 +292,7 @@ p {
   position: relative;
   overflow: hidden;
   padding-top: 100px;
-  background: var(--dark-bg);
+  background: var(--brand-brown-dark);
 }
 
 .hero::before {
@@ -455,8 +455,8 @@ p {
 }
 
 .feature-icon {
-  width: 180px;
-  height: 180px;
+  width: 170px;
+  height: 170px;
   background: var(--brand-brown);
   border-radius: var(--radius-md);
   display: flex;
@@ -646,7 +646,7 @@ p {
     display: block;
     width: 200px;
     height: auto;
-    margin: 0 auto var(--spacing-md);
+    margin: 0 auto var(--spacing-xs);
     object-fit: contain;
   }
 
