@@ -274,9 +274,9 @@ p {
 }
 
 .logo-image {
-  height: 380px;
+  height: 100%;
   width: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .hero-mobile-logo {
@@ -707,7 +707,7 @@ p {
   }
 
   .logo-image {
-    height: 60px;
+    height: 6rem;
   }
 
   .logo-icon {
