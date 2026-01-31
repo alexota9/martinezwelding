@@ -608,6 +608,7 @@ p {
 
 .footer-links {
   display: flex;
+  font-size: 1rem;
   flex-direction: column;
   gap: var(--spacing-xs);
 }
